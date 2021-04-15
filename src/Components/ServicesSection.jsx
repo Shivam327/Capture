@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 //Importing Icon
 import clock from "../image/clock.svg";
@@ -39,7 +40,6 @@ const ServicesSection = () => {
             <p>Lorem ipsum dolor sit amet.</p>
           </Card>
           <Card>
-            {" "}
             <div className="icon">
               <img src={money} alt="money" />
               <h3>Affordable</h3>
@@ -57,6 +57,7 @@ const ServicesSection = () => {
 
 const Services = styled(About)`
   h2 {
+    color: yellowgreen;
     padding-bottom: 5rem;
   }
   p {

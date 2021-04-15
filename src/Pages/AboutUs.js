@@ -6,9 +6,9 @@ import FaqSection from "../Components/FaqSection";
 const AboutUS = () => {
   return (
     <div>
-      <AboutSectionComponent />
+      {/* <AboutSectionComponent /> */}
       <ServicesSection />
-      <FaqSection />
+      {/* <FaqSection /> */}
     </div>
   );
 };
