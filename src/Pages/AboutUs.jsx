@@ -3,14 +3,14 @@ import AboutSectionComponent from "../Components/AboutSectionComponent";
 import ServicesSection from "../Components/ServicesSection";
 import FaqSection from "../Components/FaqSection";
 
-const AboutUS = () => {
+const AboutUs = () => {
   return (
     <div>
-      {/* <AboutSectionComponent /> */}
+      <AboutSectionComponent />
       <ServicesSection />
-      {/* <FaqSection /> */}
+      <FaqSection />
     </div>
   );
 };
 
-export default AboutUS;
+export default AboutUs;

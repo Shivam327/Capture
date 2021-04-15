@@ -57,7 +57,6 @@ const ServicesSection = () => {
 
 const Services = styled(About)`
   h2 {
-    color: yellowgreen;
     padding-bottom: 5rem;
   }
   p {

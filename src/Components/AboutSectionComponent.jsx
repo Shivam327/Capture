@@ -1,26 +1,29 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import home1 from "../image/home1.png";
-//Style
-import styled from "styled-components";
+
+//Framer Motion
+
+import { motion } from "framer-motion";
+
 import { About, Description, Hide, Image } from "../styles";
 const AboutSection = () => {
   return (
     <About>
       <Description>
-        <div className="title">
+        <motion.div className="title">
           <Hide>
-            <h2>We Work to Make</h2>
+            <motion.h2>We Work to Make</motion.h2>
           </Hide>
           <Hide>
-            <h2>
+            <motion.h2>
               your <span>Dreams</span> come
-            </h2>
+            </motion.h2>
           </Hide>
           <Hide>
-            <h2>True</h2>
+            <motion.h2>True</motion.h2>
           </Hide>
-        </div>
+        </motion.div>
         <p>
           Contact Us for any Photography or Videography ideas that you Have. We
           have Professinals with amazing Skills
