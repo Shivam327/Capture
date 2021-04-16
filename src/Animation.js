@@ -80,7 +80,7 @@ export let slider = {
   },
 };
 export let slidercontainer = {
-  hidde: { opacity: 1 },
+  hidden: { opacity: 0 },
   show: {
     opacity: 1,
     transition: {
@@ -88,4 +88,9 @@ export let slidercontainer = {
       ease: "easeOut",
     },
   },
+};
+
+export let scrollReveal = {
+  hidden: { opacity: 0, scale: 1.2 },
+  show: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
 };

@@ -5,10 +5,11 @@ import home1 from "../image/home1.png";
 //Framer Motion
 
 import { motion } from "framer-motion";
-import { titleAnim, fade, photoAnim } from "../Animatiom";
+import { titleAnim, fade, photoAnim } from "../Animation";
 import { About, Description, Hide, Image } from "../styles";
 import Wave from "./Wave";
 import styled from "styled-components";
+
 const AboutSection = () => {
   return (
     <About>

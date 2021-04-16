@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { MovieState } from "../movieState";
 //Animation
 import { motion } from "framer-motion";
-import { pageAnimation } from "../Animatiom";
+import { pageAnimation } from "../Animation";
 const MovieDetail = () => {
   const History = useHistory();
   const url = History.location.pathname;

@@ -14,7 +14,7 @@ import {
   LineAnim,
   slider,
   slidercontainer,
-} from "../Animatiom";
+} from "../Animation";
 
 const OurWork = () => {
   return (
