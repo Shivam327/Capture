@@ -69,7 +69,6 @@ const OurWork = () => {
     </Work>
   );
 };
-
 const Work = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
@@ -81,7 +80,7 @@ const Work = styled(motion.div)`
     padding: 1rem 0rem;
   }
 `;
-let Movie = styled(motion.div)`
+const Movie = styled(motion.div)`
   padding-bottom: 10rem;
   .line {
     height: 0.5rem;
@@ -94,28 +93,28 @@ let Movie = styled(motion.div)`
     object-fit: cover;
   }
 `;
-
-let Hide = styled.div`
+const Hide = styled.div`
   overflow: hidden;
 `;
 
-let Frame1 = styled(motion.div)`
+//Frame Animation
+const Frame1 = styled(motion.div)`
   position: fixed;
   left: 0;
-  top: 0%;
+  top: 10%;
   width: 100%;
   height: 100vh;
-  background-color: #fffebf;
+  background: #fffebf;
   z-index: 2;
 `;
-let Frame2 = styled(Frame1)`
-  background-color: #ff8ebf;
+const Frame2 = styled(Frame1)`
+  background: #ff8efb;
+`;
+const Frame3 = styled(Frame1)`
+  background: #8ed2ff;
+`;
+const Frame4 = styled(Frame1)`
+  background: #8effa0;
 `;
 
-let Frame3 = styled(Frame1)`
-  background-color: #8ed2ff;
-`;
-let Frame4 = styled(Frame1)`
-  background-color: #8effa0;
-`;
 export default OurWork;

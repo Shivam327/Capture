@@ -44,31 +44,37 @@ const ContactUs = () => {
     </ContactStyle>
   );
 };
-
-let ContactStyle = styled(motion.div)`
+const ContactStyle = styled(motion.div)`
   padding: 5rem 10rem;
   color: #353535;
   min-height: 90vh;
+  @media (max-width: 1500px) {
+    padding: 2rem;
+    font-size: 1rem;
+  }
 `;
-
-let Title = styled.div`
+const Title = styled.div`
   margin-bottom: 4rem;
   color: black;
+  @media (max-width: 1500px) {
+    margin-top: 5rem;
+  }
 `;
-let Hide = styled.div`
+const Hide = styled.div`
   overflow: hidden;
 `;
-let Circle = styled.div`
+const Circle = styled.div`
   border-radius: 50%;
   width: 3rem;
   height: 3rem;
-  background-color: #353535;
+  background: #353535;
 `;
-let Social = styled(motion.div)`
+const Social = styled(motion.div)`
   display: flex;
   align-items: center;
   h2 {
     margin: 2rem;
   }
 `;
+
 export default ContactUs;
