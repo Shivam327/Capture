@@ -19,6 +19,7 @@ export const Description = styled.div`
   padding-right: 5rem;
   z-index: 2;
   h2 {
+    color: white;
     font-weight: lighter;
   }
   p {

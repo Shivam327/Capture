@@ -5,10 +5,18 @@ import athlete from "../image/athlete-small.png";
 import theracer from "../image/theracer-small.png";
 import goodtimes from "../image/goodtimes-small.png";
 import styled from "styled-components";
-
+//Animation
+import { motion } from "framer-motion";
+import { pageAnimation } from "../Animatiom";
 const OurWork = () => {
   return (
-    <Work>
+    <Work
+      style={{ background: "#fff" }}
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+    >
       <Movie>
         <h2>The Athlete</h2>
         <div className="line"></div>
@@ -34,7 +42,7 @@ const OurWork = () => {
   );
 };
 
-const Work = styled.div`
+const Work = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;
@@ -42,6 +50,7 @@ const Work = styled.div`
     padding: 2rem 2rem;
   }
   h2 {
+    //color: white;
     padding: 1rem 0rem;
   }
 `;
