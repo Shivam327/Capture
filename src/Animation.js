@@ -91,6 +91,28 @@ export let slidercontainer = {
 };
 
 export let scrollReveal = {
-  hidden: { opacity: 0, scale: 1.2 },
-  show: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+  hidden: {
+    opacity: 0,
+    scale: 1.2,
+  },
+  show: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
+export let movieSlider = {
+  hidden: {
+    width: "0%",
+    transition: { duration: 0.5 },
+  },
+  show: {
+    width: "100%",
+    transition: {
+      ease: "easeOut",
+      duration: 1,
+    },
+  },
 };

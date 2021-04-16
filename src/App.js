@@ -12,12 +12,13 @@ import { Switch, Route, useLocation } from "react-router-dom";
 
 //Animation
 import { AnimatePresence } from "framer-motion";
-
+import ScrollTop from "./Components/ScrollTop";
 function App() {
   let location = useLocation();
   return (
     <div className="App">
       <GlobalStyle />
+
       <Navbar />
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>

@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { pageAnimation, titleAnim } from "../Animation";
 import styled from "styled-components";
+import ScrollTop from "../Components/ScrollTop";
 
 const ContactUs = () => {
   return (
@@ -38,6 +39,8 @@ const ContactUs = () => {
           </Social>
         </Hide>
       </div>
+
+      <ScrollTop />
     </ContactStyle>
   );
 };
