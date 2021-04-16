@@ -75,8 +75,10 @@ const Services = styled(About)`
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
+
   @media (max-width: 1300px) {
     justify-content: center;
+    margin: 0rem auto;
   }
 `;
 const Card = styled.div`
@@ -90,6 +92,9 @@ const Card = styled.div`
       color: black;
       padding: 1rem;
     }
+  }
+  @media (max-width: 1300px) {
+    margin: 0rem auto;
   }
 `;
 export default ServicesSection;

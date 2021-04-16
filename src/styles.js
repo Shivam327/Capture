@@ -9,6 +9,7 @@ export const About = styled(motion.div)`
   padding: 5rem 10rem;
   color: white;
   @media (max-width: 1300px) {
+    min-height: 100vh;
     display: block;
     padding: 2rem 2rem;
     text-align: center;

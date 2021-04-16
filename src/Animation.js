@@ -92,8 +92,8 @@ export let slidercontainer = {
 
 export let scrollReveal = {
   hidden: {
-    opacity: 1,
-    scale: 1.2,
+    opacity: 0,
+    scale: 0.5,
   },
   show: {
     opacity: 1,
