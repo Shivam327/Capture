@@ -1,20 +1,20 @@
 export let pageAnimation = {
   hidden: {
     opacity: 0,
-    y: 300,
+    x: -300,
   },
   show: {
     opacity: 1,
-    y: 1,
+    x: 0,
     transition: {
-      duration: 1,
+      duration: 0.5,
       when: "beforeChildren",
       staggerChildren: "0.75",
     },
   },
   exit: {
     opacity: 0,
-    y: 300,
+    x: 300,
     transition: {
       duration: 0.5,
     },
@@ -56,6 +56,36 @@ export let photoAnim = {
     transition: {
       ease: "easeOut",
       duration: 0.75,
+    },
+  },
+};
+export let LineAnim = {
+  hidden: { width: "0%" },
+  show: {
+    width: "100%",
+    transition: {
+      duration: 1,
+    },
+  },
+};
+export let slider = {
+  hidden: { x: "-130%", skew: "45deg" },
+  show: {
+    x: "100%",
+    skew: "0deg",
+    transition: {
+      ease: "easeOut",
+      duration: 1,
+    },
+  },
+};
+export let slidercontainer = {
+  hidde: { opacity: 1 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15,
+      ease: "easeOut",
     },
   },
 };

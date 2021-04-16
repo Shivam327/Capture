@@ -7,7 +7,15 @@ import goodtimes from "../image/goodtimes-small.png";
 import styled from "styled-components";
 //Animation
 import { motion } from "framer-motion";
-import { pageAnimation } from "../Animatiom";
+import {
+  pageAnimation,
+  fade,
+  photoAnim,
+  LineAnim,
+  slider,
+  slidercontainer,
+} from "../Animatiom";
+
 const OurWork = () => {
   return (
     <Work
@@ -17,11 +25,20 @@ const OurWork = () => {
       animate="show"
       exit="exit"
     >
+      <motion.div variants={slidercontainer}>
+        <Frame1 variants={slider}></Frame1>
+        <Frame2 variants={slider}></Frame2>
+        <Frame3 variants={slider}></Frame3>
+        <Frame4 variants={slider}></Frame4>
+      </motion.div>
+
       <Movie>
-        <h2>The Athlete</h2>
-        <div className="line"></div>
+        <motion.h2 variants={fade}>The Athlete</motion.h2>
+        <motion.div variants={LineAnim} className="line"></motion.div>
         <Link to="/work/the-athlete">
-          <img src={athlete} alt="athlete" />
+          <Hide>
+            <motion.img variants={photoAnim} src={athlete} alt="athlete" />
+          </Hide>
         </Link>
       </Movie>
       <Movie>
@@ -50,11 +67,10 @@ const Work = styled(motion.div)`
     padding: 2rem 2rem;
   }
   h2 {
-    //color: white;
     padding: 1rem 0rem;
   }
 `;
-const Movie = styled.div`
+let Movie = styled.div`
   padding-bottom: 10rem;
   .line {
     height: 0.5rem;
@@ -66,5 +82,29 @@ const Movie = styled.div`
     height: 70vh;
     object-fit: cover;
   }
+`;
+
+let Hide = styled.div`
+  overflow: hidden;
+`;
+
+let Frame1 = styled(motion.div)`
+  position: fixed;
+  left: 0;
+  top: 0%;
+  width: 100%;
+  height: 100vh;
+  background-color: #fffebf;
+  z-index: 2;
+`;
+let Frame2 = styled(Frame1)`
+  background-color: #ff8ebf;
+`;
+
+let Frame3 = styled(Frame1)`
+  background-color: #8ed2ff;
+`;
+let Frame4 = styled(Frame1)`
+  background-color: #8effa0;
 `;
 export default OurWork;

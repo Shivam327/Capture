@@ -7,9 +7,12 @@ import home1 from "../image/home1.png";
 import { motion } from "framer-motion";
 import { titleAnim, fade, photoAnim } from "../Animatiom";
 import { About, Description, Hide, Image } from "../styles";
+import Wave from "./Wave";
+import styled from "styled-components";
 const AboutSection = () => {
   return (
     <About>
+      <Wave />
       <Description>
         <motion.div className="title">
           <Hide>
