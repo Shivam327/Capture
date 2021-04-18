@@ -11,7 +11,7 @@ export const About = styled(motion.div)`
   @media (max-width: 1300px) {
     min-height: 100vh;
     display: block;
-    padding: 2rem 2rem;
+    padding: 2.5rem 2rem;
     text-align: center;
   }
 `;

@@ -5,7 +5,9 @@ import styled from "styled-components";
 import { MovieState } from "../movieState";
 //Animation
 import { motion } from "framer-motion";
-import { pageAnimation } from "../Animation";
+import { pageAnimation, titleAnim } from "../Animation";
+
+import { Hide } from "../styles";
 const MovieDetail = () => {
   const History = useHistory();
   const url = History.location.pathname;
@@ -29,7 +31,9 @@ const MovieDetail = () => {
           exit="exit"
         >
           <HeadLine>
-            <h2>{movie.title}</h2>
+            <Hide>
+              <h2>{movie.title}</h2>
+            </Hide>
             <img src={movie.mainImg} alt="movie" />
           </HeadLine>
           <Awards>
@@ -67,6 +71,12 @@ const HeadLine = styled.div`
     width: 100%;
     height: 70vh;
     object-fit: cover;
+  }
+  @media (max-width: 1500px) {
+    padding-top: 30vh;
+    h2 {
+      padding: 1.5rem;
+    }
   }
 `;
 const Awards = styled.div`

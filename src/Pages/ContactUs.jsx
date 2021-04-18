@@ -23,13 +23,16 @@ const ContactUs = () => {
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
+
             <h2> Send Us a Message</h2>
           </Social>
         </Hide>
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
-            <h2> Send an Email</h2>
+            <a href="mailto:shivamthaker1999@gmai;.com">
+              <h2> Send an Email</h2>
+            </a>
           </Social>
         </Hide>
         <Hide>
@@ -48,9 +51,14 @@ const ContactStyle = styled(motion.div)`
   padding: 5rem 10rem;
   color: #353535;
   min-height: 90vh;
+  a {
+    text-decoration: none;
+  }
   @media (max-width: 1500px) {
     padding: 2rem;
-    font-size: 1rem;
+    h2 {
+      font-size: 2rem;
+    }
   }
 `;
 const Title = styled.div`
@@ -68,12 +76,21 @@ const Circle = styled.div`
   width: 3rem;
   height: 3rem;
   background: #353535;
+  @media (max-width: 1500px) {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 `;
 const Social = styled(motion.div)`
   display: flex;
   align-items: center;
   h2 {
     margin: 2rem;
+  }
+  @media (max-width: 1500px) {
+    h2 {
+      font-size: 2rem;
+    }
   }
 `;
 
