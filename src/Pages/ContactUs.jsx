@@ -30,9 +30,8 @@ const ContactUs = () => {
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
-            <a href="mailto:shivamthaker1999@gmai;.com">
-              <h2> Send an Email</h2>
-            </a>
+
+            <h2> Send an Email</h2>
           </Social>
         </Hide>
         <Hide>
