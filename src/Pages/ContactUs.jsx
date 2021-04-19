@@ -131,6 +131,7 @@ const SocialIcon = styled(motion.div)`
   }
   @media (max-width: 1500px) {
     a {
+      margin: 2rem;
       font-size: 2rem;
     }
   }
