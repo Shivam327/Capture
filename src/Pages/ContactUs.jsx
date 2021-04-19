@@ -120,7 +120,7 @@ const SocialIcon = styled(motion.div)`
   font-size: 2rem;
   width: 50%;
   padding: 1.5rem 0rem;
-  justify-content: space-around;
+  justify-content: space-between;
 
   a {
     font-size: 5rem;
@@ -130,8 +130,9 @@ const SocialIcon = styled(motion.div)`
     color: #23d997;
   }
   @media (max-width: 1500px) {
+    width: 100;
     a {
-      margin: 2rem;
+      padding-left: 2rem;
       font-size: 2rem;
     }
   }
