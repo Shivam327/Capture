@@ -10,7 +10,7 @@ import home2 from "../image/home2.png";
 import { About, Description, Hide, Image } from "../styles";
 import styled from "styled-components";
 import { useScroll } from "./useScroll";
-import { scrollReveal } from "../Animation";
+import { scrollReveal, titleAnim } from "../Animation";
 
 const ServicesSection = () => {
   let [element, controls] = useScroll();

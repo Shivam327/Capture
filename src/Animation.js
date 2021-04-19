@@ -8,9 +8,9 @@ export let pageAnimation = {
     x: 0,
 
     transition: {
-      duration: 0.75,
+      duration: 0.5,
       when: "beforeChildren",
-      staggerChildren: "0.75",
+      staggerChildren: "0.65",
     },
   },
   exit: {
@@ -56,7 +56,7 @@ export let photoAnim = {
     opacity: 1,
     transition: {
       ease: "easeOut",
-      duration: 0.75,
+      duration: 0.65,
     },
   },
 };
@@ -93,12 +93,11 @@ export let slidercontainer = {
 
 export let scrollReveal = {
   hidden: {
-    opacity: 0,
-    scale: 0.5,
+    opacity: 1,
   },
   show: {
     opacity: 1,
-    scale: 1,
+
     transition: {
       duration: 0.75,
     },

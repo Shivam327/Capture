@@ -17,27 +17,44 @@ const ContactUs = () => {
       <Title>
         <Hide>
           <motion.h2 variants={titleAnim}> Get in Touch</motion.h2>
+          <Line></Line>
         </Hide>
       </Title>
       <div>
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
-
-            <h2> Send Us a Message</h2>
+            <a href="https://wa.me/+917738822023">
+              <h2> Send Us a Message on Whatsapp</h2>
+            </a>
           </Social>
         </Hide>
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
 
-            <h2> Send an Email</h2>
+            <a href="mailto:Shivamthaker1999@gmail.com">
+              <h2>Send an Email</h2>
+            </a>
           </Social>
         </Hide>
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
-            <h2> Social Media </h2>
+            <SocialIcon>
+              <a href="https://instagram.com/shivam.k.thaker">
+                <i className="fab fa-instagram fa-4x"></i>
+              </a>
+              <a href="https://twitter.com/shivamthaker3">
+                <i className="fab fa-twitter fa-4x"></i>
+              </a>
+              <a href="www.linkedin.com/in/thakershivam">
+                <i className="fab fa-linkedin fa-4x"></i>
+              </a>
+              <a href="https://github.com/Shivam327">
+                <i className="fab fa-github fa-4x"></i>
+              </a>
+            </SocialIcon>
           </Social>
         </Hide>
       </div>
@@ -52,6 +69,7 @@ const ContactStyle = styled(motion.div)`
   min-height: 90vh;
   a {
     text-decoration: none;
+    color: black;
   }
   @media (max-width: 1500px) {
     padding: 2rem;
@@ -63,6 +81,7 @@ const ContactStyle = styled(motion.div)`
 const Title = styled.div`
   margin-bottom: 4rem;
   color: black;
+
   @media (max-width: 1500px) {
     margin-top: 5rem;
   }
@@ -85,12 +104,35 @@ const Social = styled(motion.div)`
   align-items: center;
   h2 {
     margin: 2rem;
+    font-size: 3.5rem;
+  }
+  a:hover {
+    color: #23d997;
   }
   @media (max-width: 1500px) {
     h2 {
       font-size: 2rem;
     }
   }
+`;
+const SocialIcon = styled(motion.div)`
+  display: flex;
+  font-size: 2rem;
+  width: 50%;
+  padding: 1.5rem 0rem;
+  justify-content: space-around;
+
+  a {
+    color: black;
+  }
+  a:hover {
+    color: #23d997;
+  }
+`;
+const Line = styled(motion.div)`
+  height: 0.5rem;
+  background: #23d997;
+  width: 25%;
 `;
 
 export default ContactUs;
