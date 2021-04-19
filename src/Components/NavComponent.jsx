@@ -37,6 +37,7 @@ const Navbar = () => {
             animate={{ width: pathname === "/contact" ? "50%" : "0%" }}
           />
         </li>
+        <div></div>
       </ul>
     </StyledNav>
   );
