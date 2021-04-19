@@ -43,16 +43,16 @@ const ContactUs = () => {
             <Circle />
             <SocialIcon>
               <a href="https://instagram.com/shivam.k.thaker">
-                <i className="fab fa-instagram fa-4x"></i>
+                <i className="fab fa-instagram"></i>
               </a>
               <a href="https://twitter.com/shivamthaker3">
-                <i className="fab fa-twitter fa-4x"></i>
+                <i className="fab fa-twitter"></i>
               </a>
               <a href="www.linkedin.com/in/thakershivam">
-                <i className="fab fa-linkedin fa-4x"></i>
+                <i className="fab fa-linkedin"></i>
               </a>
               <a href="https://github.com/Shivam327">
-                <i className="fab fa-github fa-4x"></i>
+                <i className="fab fa-github"></i>
               </a>
             </SocialIcon>
           </Social>
@@ -123,10 +123,16 @@ const SocialIcon = styled(motion.div)`
   justify-content: space-around;
 
   a {
+    font-size: 5rem;
     color: black;
   }
   a:hover {
     color: #23d997;
+  }
+  @media (max-width: 1500px) {
+    a {
+      font-size: 2rem;
+    }
   }
 `;
 const Line = styled(motion.div)`
