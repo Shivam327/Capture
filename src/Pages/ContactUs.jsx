@@ -73,17 +73,19 @@ const ContactStyle = styled(motion.div)`
   }
   @media (max-width: 1500px) {
     padding: 2rem;
-    h2 {
-      padding: 0rem 1.5rem;
-    }
   }
 `;
 const Title = styled.div`
   margin-bottom: 4rem;
   color: black;
-
+  h2 {
+    font-size: 5rem;
+  }
   @media (max-width: 1500px) {
     margin-top: 5rem;
+    h2 {
+      font-size: 4rem;
+    }
   }
 `;
 const Hide = styled.div`
@@ -105,7 +107,9 @@ const Social = styled(motion.div)`
 
   h2 {
     padding: 2rem;
-    font-size: 3.5rem;
+  }
+  a {
+    font-size: 5rem;
   }
   a:hover {
     color: #23d997;
@@ -118,7 +122,6 @@ const Social = styled(motion.div)`
 `;
 const SocialIcon = styled(motion.div)`
   display: flex;
-
   width: 50%;
   padding: 2rem 2rem;
   justify-content: space-between;
@@ -132,10 +135,9 @@ const SocialIcon = styled(motion.div)`
     color: #23d997;
   }
   @media (max-width: 1500px) {
-    width: 100;
     a {
-      padding: 2rem;
-      font-size: 3rem;
+      padding: 1rem;
+      font-size: 2.5rem;
     }
   }
 `;
