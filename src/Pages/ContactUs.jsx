@@ -122,8 +122,8 @@ const Social = styled(motion.div)`
 `;
 const SocialIcon = styled(motion.div)`
   display: flex;
-  width: 50%;
-  padding: 2rem 2rem;
+  width: 75%;
+  padding: 2rem 0rem;
   justify-content: space-between;
 
   a {
@@ -135,6 +135,7 @@ const SocialIcon = styled(motion.div)`
     color: #23d997;
   }
   @media (max-width: 1500px) {
+    margin: 0rem 1.5rem;
     a {
       padding: 1rem;
       font-size: 2.5rem;
@@ -144,7 +145,7 @@ const SocialIcon = styled(motion.div)`
 const Line = styled(motion.div)`
   height: 0.5rem;
   background: #23d997;
-  width: 25%;
+  width: 75%;
 `;
 
 export default ContactUs;
