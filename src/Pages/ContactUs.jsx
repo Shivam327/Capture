@@ -24,18 +24,19 @@ const ContactUs = () => {
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
-            <a href="https://wa.me/+917738822023">
-              <h2> Send Us a Message on Whatsapp</h2>
-            </a>
+            <h2>
+              <a href="https://wa.me/+917738822023">
+                Send Us a Message on Whatsapp
+              </a>
+            </h2>
           </Social>
         </Hide>
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
-
-            <a href="mailto:Shivamthaker1999@gmail.com">
-              <h2>Send an Email</h2>
-            </a>
+            <h2>
+              <a href="mailto:Shivamthaker1999@gmail.com">Send an Email</a>
+            </h2>
           </Social>
         </Hide>
         <Hide>
@@ -68,6 +69,7 @@ const ContactStyle = styled(motion.div)`
   color: #353535;
   min-height: 90vh;
   a {
+    font-size: 4.5rem;
     text-decoration: none;
     color: black;
   }
@@ -117,12 +119,13 @@ const Social = styled(motion.div)`
 `;
 const SocialIcon = styled(motion.div)`
   display: flex;
-  font-size: 2rem;
+  font-size: 1.5rem;
   width: 50%;
-  padding: 1.5rem 0rem;
+  padding: 1.5rem 2rem;
   justify-content: space-between;
 
   a {
+    padding: 0rem 1rem;
     font-size: 5rem;
     color: black;
   }
