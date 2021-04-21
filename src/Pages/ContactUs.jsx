@@ -25,9 +25,7 @@ const ContactUs = () => {
           <Social variants={titleAnim}>
             <Circle />
             <h2>
-              <a href="https://wa.me/+917738822023">
-                Send Us a Message on Whatsapp
-              </a>
+              <a href="https://wa.me/+917738822023">Send Us a Message</a>
             </h2>
           </Social>
         </Hide>
@@ -76,7 +74,7 @@ const ContactStyle = styled(motion.div)`
   @media (max-width: 1500px) {
     padding: 2rem;
     h2 {
-      font-size: 2rem;
+      padding: 0rem 1.5rem;
     }
   }
 `;
@@ -104,28 +102,29 @@ const Circle = styled.div`
 const Social = styled(motion.div)`
   display: flex;
   align-items: center;
+
   h2 {
-    margin: 2rem;
+    padding: 2rem;
     font-size: 3.5rem;
   }
   a:hover {
     color: #23d997;
   }
   @media (max-width: 1500px) {
-    h2 {
+    a {
       font-size: 2rem;
     }
   }
 `;
 const SocialIcon = styled(motion.div)`
   display: flex;
-  font-size: 1.5rem;
+
   width: 50%;
-  padding: 1.5rem 2rem;
+  padding: 2rem 2rem;
   justify-content: space-between;
 
   a {
-    padding: 0rem 1rem;
+    padding: 0rem 1.5rem;
     font-size: 5rem;
     color: black;
   }
@@ -136,7 +135,7 @@ const SocialIcon = styled(motion.div)`
     width: 100;
     a {
       padding-left: 2rem;
-      font-size: 2rem;
+      font-size: 3rem;
     }
   }
 `;
