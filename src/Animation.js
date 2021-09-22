@@ -15,9 +15,11 @@ export let pageAnimation = {
   },
   exit: {
     opacity: 0,
-    x: 300,
+    x: -100,
+    y: -100,
+    scale: 0.5,
     transition: {
-      duration: 0.5,
+      duration: 0.55,
     },
   },
 };
@@ -27,7 +29,7 @@ export let titleAnim = {
   show: {
     y: 0,
     transition: {
-      duration: 0.75,
+      duration: 0.5,
       ease: "easeOut",
     },
   },
@@ -41,7 +43,7 @@ export let fade = {
     opacity: 1,
     transition: {
       ease: "easeOut",
-      duration: 0.75,
+      duration: 0.55,
     },
   },
 };
@@ -56,7 +58,7 @@ export let photoAnim = {
     opacity: 1,
     transition: {
       ease: "easeOut",
-      duration: 0.65,
+      duration: 0.3,
     },
   },
 };
@@ -93,13 +95,15 @@ export let slidercontainer = {
 
 export let scrollReveal = {
   hidden: {
-    opacity: 1,
+    scale: 0.7,
+    opacity: 0,
   },
   show: {
+    scale: 1,
     opacity: 1,
 
     transition: {
-      duration: 0.75,
+      duration: 0.5,
     },
   },
 };

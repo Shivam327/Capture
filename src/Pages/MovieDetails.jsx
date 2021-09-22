@@ -11,11 +11,9 @@ import { Hide } from "../styles";
 const MovieDetail = () => {
   const History = useHistory();
   const url = History.location.pathname;
-  const [movies, setMovies] = useState(MovieState);
+  const [movies] = useState(MovieState);
   const [movie, setMovie] = useState(null);
 
-  //USeEffect
-  //UseEffect
   useEffect(() => {
     const currentMovie = movies.filter((stateMovie) => stateMovie.url === url);
     setMovie(currentMovie[0]);

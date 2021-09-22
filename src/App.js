@@ -23,9 +23,7 @@ function App() {
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
           {/* ------------------------------ */}
-          <Route path="/" exact>
-            <AboutUs />
-          </Route>
+          <Route component={AboutUs} path="/" exact />
           {/* ------------------------------ */}
           <Route path="/work" exact>
             <OurWork />

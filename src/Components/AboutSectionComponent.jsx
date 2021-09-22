@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React from "react";
 import home1 from "../image/home1.png";
 
@@ -8,7 +7,6 @@ import { motion } from "framer-motion";
 import { titleAnim, fade, photoAnim } from "../Animation";
 import { About, Description, Hide, Image } from "../styles";
 import Wave from "./Wave";
-import styled from "styled-components";
 
 const AboutSection = () => {
   return (
